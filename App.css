@@ -1,0 +1,1223 @@
+@import "leaflet/dist/leaflet.css";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navigation Bar */
+
+.main-cont{
+  background-color: rgb(64, 64, 229);
+  color: white;
+  height: 10vh;
+
+}
+
+.main-nav-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.app-name{
+
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+
+}
+
+.main-nav{
+
+}
+
+.active-nav{
+  color: black;
+  text-decoration: underline;
+  }
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li{
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-links li:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+
+/* Poster image */
+
+.home-poster-cont{
+  /* margin-top: 10px; */
+  background-color: lightgray;
+  border: 2px solid black;
+  height: 40vh;
+}
+
+.home-poster-text{
+  /* border: 1px solid blue; */
+  width:75% ;
+  margin: 40px auto;
+}
+
+.home-poster-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.home-poster-title{
+  letter-spacing: 3px;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.home-poster-desc{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Prediction-btn{
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+.Contact-btn{
+
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer
+}
+
+/* Home page extra */
+
+.home-poster-extra-cont{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+}
+
+.detail1{
+  display: flex;
+}
+
+.detail2{
+  display: flex;
+}
+
+.detail3{
+  display: flex;
+}
+
+.details{
+
+}
+
+.detail1-img{
+  color: red;
+}
+
+.detail2-img{
+  color: red;
+}
+
+.detail3-img{
+  color: red;
+}
+
+/* Earthquake prediction section */
+.prediction-cont{
+  height: 100vh;
+  width: 90%;
+  /* border: 2px solid black; */
+  margin: 50px auto;
+}
+
+.prediction-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+}
+
+.prediction-title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+.prediction-desc{
+
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.prediction-body{
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.prediction-map-cont{
+  width: 50%;
+  border: 2px solid black;
+}
+
+.prediction-table-cont{
+  width: 40%;
+  border: 2px solid black;
+
+}
+
+.prediction-map{
+  height: 500px;
+  border: 2px solid blue;
+
+}
+
+.prediction-result-container{
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px
+  ;
+}
+
+.prediction-result1{
+  border: 1px solid black;
+  width: 120px;
+
+}
+.prediction-result2{
+  border: 1px solid black;
+  width: 120px;
+}
+.prediction-result3{
+  border: 1px solid black;
+  width: 120px;
+}
+.prediction-result4{
+  border: 1px solid black;
+  width: 120px;
+}
+
+.prediction-table-cont{
+  background-color: black;
+  color: white;
+}
+
+.region-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.region-ind{
+  background-color: orange;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px ;
+
+  border-radius: 25px;
+
+}
+
+.region-ind-mod{
+  background-color: blue;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px ;
+
+  border-radius: 25px;
+
+}
+
+.normal-para{
+  font-size: 15px;
+  color: grey;
+  margin-left: 10px;
+}
+
+.regional-line{
+  height: 8px; /* thickness */
+  width: 90%; /* total width, or change to 80% etc */
+  border: none;
+  background: linear-gradient(to right, orange 60%, white 40%);
+  margin: 0px 10px; /* spacing above and below */
+}
+
+.regional-line-mod{
+  height: 8px; /* thickness */
+  width: 90%; /* total width, or change to 80% etc */
+  border: none;
+  background: linear-gradient(to right, blue 30%, white 40%);
+  margin: 0px 10px; /* spacing above and below */
+}
+
+.prediction-table-title{
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Start of registeration screen styling */
+.register-cont{
+
+}
+
+.register-title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start instead of center */
+  gap: 2rem; /* Add spacing between each form row */
+  gap: 0.5rem; /* Space between label and input */
+  width: 80%;
+  margin: 0 auto;
+
+  font-size: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.register-btn{
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+.register-btn:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.login-btn{
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+.login-btn:hover{
+  background-color: #fff;
+  color: black;
+}
+
+
+/* Contact page styling */
+
+.contact-cont {
+  display: flex;
+  gap: 5%;
+  width: 80%;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.customer-cont {
+  border: 2px solid blue;
+  height: 80vh;
+  width: 50%;
+}
+
+.our-cont {
+  border: 2px solid red;
+  height: 80vh;
+  width: 50%;
+}
+
+.contact-icon {
+}
+
+.Contact-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.Contact-desc {
+}
+
+.contact-form {
+  display: grid;
+  grid-column: 2;
+  grid-row: 5;
+  row-gap: 5%;
+  column-gap: 10%;
+  padding: 15px;
+}
+
+.name-cont {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.email-cont {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.subject-cont {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.message-cont {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input-label {
+}
+
+.input-field {
+  width: 100%;
+  height: 5vh;
+}
+.msg-field {
+  height: 15vh;
+}
+
+.emergency-cont {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  gap: 5px;
+}
+
+.contact-checkbox {
+}
+
+.emergency-message {
+}
+
+.contact-button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  height: 5vh;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.our-cont{
+  background-color: black;
+  color: white;
+
+}
+
+.our-cont-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 3%;
+}
+
+.cont-hr-line{
+  border-top: 1px solid white;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.email-cont{
+  margin: 5%;
+}
+
+.cont-heads{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cont-body{
+  color: rgb(109, 106, 106);
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.preperation-cont{
+  padding: 20px;
+
+}
+
+.preparation-title{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.preparation-desc{
+  text-align: center;
+}
+
+.preparation-body{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.emer-contact-cont{
+  margin-top: 50px;
+  border: 2px solid blue;
+  height: 60vh;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0745e;
+}
+
+.emer-resource-cont{
+  margin-top: 50px;
+  border: 2px solid black;
+  height: 60vh;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #93c0f4;
+}
+
+
+
+.emer-sos-cont{
+  margin-top: 50px;
+  border: 2px solid red;
+  height: 60vh;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f6f881;
+}
+
+.emer-title{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2
+}
+
+.emer-contact-title{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.emer-contact-title-text{
+  font-size: 20px;
+  letter-spacing: 2px;
+
+}
+.emer-contact-body{
+  margin-left: 35px;
+}
+
+.emer-sos-desc{
+  margin-top: 20px;
+}
+
+.emer-sos-btn{
+  width: 80%;
+  margin: 10px auto;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 2;
+  cursor: pointer;
+}
+
+.emer-sos-btn:hover{
+  background-color: black;
+}
+
+
+/* Historical data screen starts here */
+.historical-data-cont{
+
+}
+
+.historical-data-title{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.historical-data-desc{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.historical-data-body{
+  width: 80%;
+  margin: 40px auto;
+  
+
+}
+
+.search-section-cont, .search-result-cont{
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+.body-heading-cont{
+
+}
+
+.body-heading-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 10px;
+
+}
+
+.body-heading-desc{
+}
+
+.search-section-body, .search-result-body{
+  margin-top: 15px;
+  display: flex;
+  gap: 8%;
+}
+
+.get-or-fetch-detail-cont{
+
+}
+
+.get-or-fetch-detail-title{
+
+}
+
+.search-section-title{
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+.search-section-field{
+  width: 100%;
+  height: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.search-section-btn-cont{
+  /* float: right; */
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.reset-btn,
+.filter-search-btn {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  width: 10%;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+.filter-search-btn{
+  background-color: rgb(40, 40, 197);
+  color: white;
+  font-size: 15px;
+}
+
+.reset-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.filter-search-btn:hover{
+  background-color: rgb(2, 2, 112);
+}
+
+.search-result-des-btn-cont{
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.active-btn-hist-scr{
+  background-color: rgb(40, 40, 197);
+  color: white;
+}
+
+.search-result-des-btn{
+
+  font-size: 15px;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.search-result-cont{
+  width: 100%;
+  padding: 10px;
+
+}
+
+.search-result-overview-detail{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.search-result-body{
+  justify-content: center;
+}
+
+.search-result-notable-event-cont{
+  margin-top: 15px;
+  border: 2px solid black;
+  padding: 10px;
+
+  background-color: lightgrey;
+}
+
+.notable-event-item-cont{
+  /* width: 100%; */
+  margin-top: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.notable-event-mag-sec{
+  background-color: rgb(219, 219, 12);
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+
+}
+
+.notable-event-regiion-detail{
+  
+
+  flex-grow: 1;
+}
+
+.notable-event-region{
+
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.notable-event-date{
+
+}
+
+.notable-event-desc{
+
+}
+
+.notable-event-other-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.mild-severity, .moderate-severity, .severe-severity{
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  
+
+}
+
+.mild-severity{
+  background-color: green;
+  color: white;
+}
+
+.moderate-severity{
+  background-color: orange;
+  color: white;
+}
+
+.severe-severity{
+  background-color: red;
+  color: white;
+
+}
+
+
+/* Map screen starts here */
+.map-screen-cont{
+
+}
+
+.map-screen-map{
+  width: 90%;
+  height: 80vh;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid black;
+
+}
+
+.map-screen-other-details-cont{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: top;
+  padding: 10px;
+}
+
+.recent-activity-cont, .world-historical-event-cont, .risk-assessment-cont{
+  width: 30%;
+  height: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.recent-activity-cont{
+
+
+
+}
+
+.map-screen-component-item{
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 10px;
+
+
+}
+
+.map-screen-component-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.map-screen-component-mag{
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgb(219, 219, 12);
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+}
+
+.map-screen-component-item-details{
+
+}
+
+.map-screen-component-region{
+  font-weight: bold;
+
+}
+
+.map-screen-other-detail{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.world-historical-event-cont{
+
+}
+.risk-assessment-cont{
+
+}
+
+.map-screen-risk-assessment-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.map-screen-risk-assessment-body{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+.map-screen-risk-assessment-body{
+
+}
+
+
+/* News and updates starts from here */
+
+.news-and-updates-cont{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 10px;
+  height: 100%;
+  width: 90%;
+  margin: 10px auto;
+
+}
+
+.news-cont{
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  padding: 10px;
+}
+
+.news-cont-title{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.news-cont-desc{
+
+}
+
+.news-item-cont{
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+  align-items: stretch;
+  height: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  /* height: 200px; */
+}
+
+.news-item-img{
+  width: 30%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+
+}
+
+.news-item-text{
+
+}
+
+.news-item-headers{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.news-item-tag{
+  background-color: rgb(219, 219, 12);
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.news-item-time{
+
+}
+
+.news-item-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 15px 0px;
+}
+
+.news-item-desc{
+  margin-bottom: 15px;
+}
+
+.news-item-footer{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-item-source{
+
+}
+
+.news-item-read-more{
+
+}
+
+.weather-cont{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 10px;
+  border-radius: 20px;
+
+  background-color: black;
+  color: white;
+
+}
+
+.weather-cont-title{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+
+}
+
+.weather-cont-desc{
+
+}
+
+.today-weather-cont{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.today-weather-cont-item{
+
+}
+
+.today-weather-degree{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.weather-other-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 5px;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.other-weather-detail-item1, .other-weather-detail-item2, .other-weather-detail-item3, .other-weather-detail-item4{
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+
+}
+
+.weather-forecast-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+.weather-forecast-item-cont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
+.weather-alert-cont{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px
+  
+
+}
+
+.weather-alert-title{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+.weather-alert-item-cont{
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.weather-alert-item-title{
+  margin: 10px 0px;
+}
+
+.weather-alert-item-desc{
+  margin-bottom: 10px;
+
+}
+
+.weather-alert-item-time{
+  color: brown;
+
+}
+
+
+/* EarthQuake Prediction screen */
+
+.earthquake-prediction-cont{
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid black;
+  
+}
+
+.earthquake-prediction-title{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.earthquake-prediction-desc{
+  margin-bottom: 25px;
+}
+
+.earthquake-prediction-form{
+  width: 100%;
+}
+
+.earthquake-pred-label{
+
+}
+
+.earthquake-pred-field{
+  width: 50%;
+  height: 20px;
+  padding: 12px 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.predict-btn{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  width: 40%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.predict-btn:hover{
+  background-color: black;
+  color: white;
+};
+
+.predict-place-title{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+.predict-place-name{
+  font-size: 16px;
+  color: blue;
+}
+
+.prob-indicator {
+  width: 150px;
+  margin: 20px auto;
+}
+
